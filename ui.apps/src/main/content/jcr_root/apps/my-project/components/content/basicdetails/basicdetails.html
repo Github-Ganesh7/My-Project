@@ -1,0 +1,13 @@
+======= From HTML ========
+<h2>Basic Details</h2>
+First Name : ${properties.firstname}
+Last Name : ${properties.lastname}
+Contact Number : ${properties.contactnumber}
+======= From Sling Model =======
+<sly data-sly-use.basicdetails= "com.my.project.core.models.BasicDetails"></sly>
+<h2> Basic Details</h2>
+<div>
+First Name : ${basicdetails.firstName}<br>
+Last Name : ${basicdetails.lastName}<br>
+Contact Number : ${basicdetails.contactNumber}
+</div>
