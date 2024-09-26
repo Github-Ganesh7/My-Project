@@ -7,4 +7,5 @@ public interface BasicDetails {
     String getLastName();
     String getContactNumber();
     String getPageTitle();
+    String getRequestAttribute();
 }

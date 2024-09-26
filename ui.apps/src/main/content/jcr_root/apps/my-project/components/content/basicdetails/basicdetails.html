@@ -4,11 +4,12 @@ First Name : ${properties.firstname}<br>
 Last Name : ${properties.lastname}<br>
 Contact Number : ${properties.contactnumber}<br>
 ======= From Sling Model =======
-<sly data-sly-use.basicdetails= "com.my.project.core.models.BasicDetails"></sly>
+<sly data-sly-use.basicdetails= "${'com.my.project.core.models.BasicDetails' @ rAttribute = 'TestAttribute'}"></sly>
 <h2> Basic Details</h2>
 <div>
 First Name : ${basicdetails.firstName}<br>
 Last Name : ${basicdetails.lastName}<br>
 Contact Number : ${basicdetails.contactNumber}<br>
-Page Title = ${basicdetails.pageTitle}
+Page Title = ${basicdetails.pageTitle}<br>
+Request Attribute : ${basicdetails.requestAttribute}
 </div>
