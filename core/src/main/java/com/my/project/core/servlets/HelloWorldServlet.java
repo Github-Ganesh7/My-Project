@@ -51,7 +51,7 @@ public class HelloWorldServlet extends SlingSafeMethodsServlet {
         response.setContentType("text/html");
         PrintWriter writer = response.getWriter();
         writer.println("<html><body>");
-        writer.println("<h1>Hello World!!</h1>");
+        writer.println("<h1>Hello World!!!</h1>");
 
     }
 }
